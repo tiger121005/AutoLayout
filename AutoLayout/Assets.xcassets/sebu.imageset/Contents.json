@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "cebu.jpeg",
       "idiom" : "universal"
     }
   ],

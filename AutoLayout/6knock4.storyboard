@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fKN-0H-Mqf">
+            <objects>
+                <viewController id="gK0-nC-6oc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rYu-uc-b42">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sV3-Yu-w21">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="72" id="wQL-xo-XfQ">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wQL-xo-XfQ" id="IK1-Fx-8Qk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sebu" translatesAutoresizingMaskIntoConstraints="NO" id="e66-Bk-5Kb">
+                                                    <rect key="frame" x="10" y="6" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="GjG-WU-48v"/>
+                                                        <constraint firstAttribute="width" constant="60" id="Zeq-8R-jLm"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="セブ島" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Feg-by-Zat">
+                                                    <rect key="frame" x="80" y="29" width="87" height="37"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フィリピン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRb-4z-0cz">
+                                                    <rect key="frame" x="80" y="10" width="65.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e66-Bk-5Kb" firstAttribute="centerY" secondItem="IK1-Fx-8Qk" secondAttribute="centerY" id="2Wz-2b-sHF"/>
+                                                <constraint firstItem="e66-Bk-5Kb" firstAttribute="leading" secondItem="IK1-Fx-8Qk" secondAttribute="leading" constant="10" id="QAp-Oy-wcl"/>
+                                                <constraint firstItem="SRb-4z-0cz" firstAttribute="top" secondItem="IK1-Fx-8Qk" secondAttribute="top" constant="10" id="SJT-mW-W4J"/>
+                                                <constraint firstItem="SRb-4z-0cz" firstAttribute="leading" secondItem="e66-Bk-5Kb" secondAttribute="trailing" constant="10" id="V4a-ss-q4j"/>
+                                                <constraint firstItem="Feg-by-Zat" firstAttribute="top" secondItem="SRb-4z-0cz" secondAttribute="bottom" constant="2" id="bsQ-PM-CQn"/>
+                                                <constraint firstItem="Feg-by-Zat" firstAttribute="leading" secondItem="e66-Bk-5Kb" secondAttribute="trailing" constant="10" id="mp3-d2-1jB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3E4-sM-MOt"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sV3-Yu-w21" firstAttribute="bottom" secondItem="3E4-sM-MOt" secondAttribute="bottom" id="Hur-CR-ocm"/>
+                            <constraint firstItem="sV3-Yu-w21" firstAttribute="top" secondItem="3E4-sM-MOt" secondAttribute="top" id="Kpe-Ua-NNd"/>
+                            <constraint firstItem="sV3-Yu-w21" firstAttribute="trailing" secondItem="3E4-sM-MOt" secondAttribute="trailing" id="kc2-wu-Cuy"/>
+                            <constraint firstItem="sV3-Yu-w21" firstAttribute="leading" secondItem="3E4-sM-MOt" secondAttribute="leading" id="qjT-dK-gE4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y5N-vW-BFd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRt-zI-19t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="3430"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FrD-Nr-Rfc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ASK-hs-ek4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O1j-OA-WfA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gK0-nC-6oc" kind="relationship" relationship="rootViewController" id="uC7-yc-dzZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RiH-z1-YKa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-602" y="3430"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sebu" width="700" height="469"/>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="n2L-5c-E19">
+            <objects>
+                <viewController id="8yN-g6-0EX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I28-j2-q9c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaz-4F-8ue">
+                                <rect key="frame" x="16" y="517" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vhe-e8-szF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="ログイン">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXM-XE-Gtv">
+                                <rect key="frame" x="159" y="577" width="57" height="30"/>
+                                <state key="normal" title="新規登録"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="7kB-Bc-Jx6">
+                                <rect key="frame" x="16" y="170" width="343" height="90"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="50E-0u-qOu">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Swu-CX-FnO">
+                                        <rect key="frame" x="0.0" y="56" width="343" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xsk-gS-8WY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xsk-gS-8WY" firstAttribute="trailing" secondItem="oaz-4F-8ue" secondAttribute="trailing" constant="16" id="4Ps-XW-fp1"/>
+                            <constraint firstItem="7kB-Bc-Jx6" firstAttribute="leading" secondItem="xsk-gS-8WY" secondAttribute="leading" constant="16" id="ByD-r2-14k"/>
+                            <constraint firstItem="7kB-Bc-Jx6" firstAttribute="top" secondItem="xsk-gS-8WY" secondAttribute="top" constant="150" id="K9e-Tn-BZW"/>
+                            <constraint firstItem="xsk-gS-8WY" firstAttribute="bottom" secondItem="MXM-XE-Gtv" secondAttribute="bottom" constant="60" id="Tgh-GU-Bke"/>
+                            <constraint firstItem="xsk-gS-8WY" firstAttribute="trailing" secondItem="7kB-Bc-Jx6" secondAttribute="trailing" constant="16" id="dDg-dB-TYJ"/>
+                            <constraint firstItem="oaz-4F-8ue" firstAttribute="leading" secondItem="xsk-gS-8WY" secondAttribute="leading" constant="16" id="e2h-7S-tLH"/>
+                            <constraint firstItem="MXM-XE-Gtv" firstAttribute="centerX" secondItem="I28-j2-q9c" secondAttribute="centerX" id="eJQ-Bg-XI8"/>
+                            <constraint firstItem="MXM-XE-Gtv" firstAttribute="top" secondItem="oaz-4F-8ue" secondAttribute="bottom" constant="20" id="s2c-Iv-gJ9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Yd-Rs-gnn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="5491.304347826087"/>
+        </scene>
+    </scenes>
+</document>
